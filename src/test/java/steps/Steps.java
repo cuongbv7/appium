@@ -4,11 +4,11 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 
 public class Steps {
-    public JobDetailsSteps jobDetailsSteps;
-    public ViettelPlusSteps viettelPlusSteps;
+    public LoginToWalletSteps loginToWalletSteps;
+    public FlightBookingSteps flightBookingSteps;
     public Steps (AndroidDriver<MobileElement> driver){
-        this.jobDetailsSteps = new JobDetailsSteps(driver);
-        this.viettelPlusSteps = new ViettelPlusSteps(driver);
+        this.loginToWalletSteps = new LoginToWalletSteps(driver);
+        this.flightBookingSteps = new FlightBookingSteps(driver);
 
     }
 }
